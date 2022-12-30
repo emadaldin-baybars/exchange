@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+// imports
+@import "./styles/colors.scss";
+@import "./styles/variables.scss";
+
+// import Roboto font
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+// import Material Icons
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// import Angular Material theme and core styles
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(242, 242, 242);
+}
+
+.elevation{
+  box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+}
