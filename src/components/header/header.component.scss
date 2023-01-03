@@ -3,11 +3,15 @@
 
 
 .navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   margin-bottom: 20px;
   background-color: #fff;
 }
 
 .navbar-lg{
+  height: 50px;
   padding: 5px 30px;
 }
 
@@ -40,10 +44,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .collapse{
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 .nav-link{

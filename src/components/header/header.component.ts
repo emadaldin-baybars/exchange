@@ -23,7 +23,6 @@ import { Component, OnInit } from '@angular/core';
           <span>Logout</span>
         </div>
 
-
       </div>
     </nav>
   `,

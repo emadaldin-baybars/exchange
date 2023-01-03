@@ -1,0 +1,65 @@
+@import '../../styles/variables';
+@import '../../styles/colors';
+
+.form {
+  min-width: 150px;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.full-width {
+  display: flex;
+  flex: 1;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.f-2 {
+  flex: 2;
+}
+
+.conversion-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.conversion-result {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: $page-title-font-size;
+  width: 50%;
+}
+
+.before {
+  font-weight: 100;
+}
+
+.after {
+  color: $accent;
+  font-weight: 600;
+}
+
+.rate-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.rate {
+  font-size: $body-text-font-size;
+  color: $table-header-text;
+  margin-top: 10px;
+}

@@ -15,14 +15,35 @@
 html, body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 body{
   background-color: rgb(242, 242, 242);
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .elevation{
   box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
 }
+
+button.mat-primary{
+  background-color: $primary !important;
+  color: #fff !important;
+}
+
+button.mat-basic{
+  background-color: #fff;
+  color: $primary;
+}
+
+button.mdc-fab{
+  border-radius: 5px !important;
+}
+
+.page-title{
+  font-size: $page-title-font-size !important;
+  font-weight: 500 !important;
+  color: $default-text;
+}
+

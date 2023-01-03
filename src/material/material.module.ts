@@ -1,13 +1,13 @@
 import {NgModule} from '@angular/core';
-// import {A11yModule} from '@angular/cdk/a11y';
-// import {CdkAccordionModule} from '@angular/cdk/accordion';
-// import {ClipboardModule} from '@angular/cdk/clipboard';
-// import {DragDropModule} from '@angular/cdk/drag-drop';
-// import {PortalModule} from '@angular/cdk/portal';
-// import {ScrollingModule} from '@angular/cdk/scrolling';
-// import {CdkStepperModule} from '@angular/cdk/stepper';
-// import {CdkTableModule} from '@angular/cdk/table';
-// import {CdkTreeModule} from '@angular/cdk/tree';
+import {A11yModule} from '@angular/cdk/a11y';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
+import {ClipboardModule} from '@angular/cdk/clipboard';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {PortalModule} from '@angular/cdk/portal';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {CdkStepperModule} from '@angular/cdk/stepper';
+import {CdkTableModule} from '@angular/cdk/table';
+import {CdkTreeModule} from '@angular/cdk/tree';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
@@ -42,20 +42,20 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
-// import {OverlayModule} from '@angular/cdk/overlay';
-// import {CdkMenuModule} from '@angular/cdk/menu';
-// import {DialogModule} from '@angular/cdk/dialog';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { DialogModule } from '@angular/cdk/dialog';
+import {CdkMenuModule} from '@angular/cdk/menu';
 
 @NgModule({
   exports: [
-    // A11yModule,
-    // CdkAccordionModule,
-    // ClipboardModule,
-    // CdkMenuModule,
-    // CdkStepperModule,
-    // CdkTableModule,
-    // CdkTreeModule,
-    // DragDropModule,
+    A11yModule,
+    CdkAccordionModule,
+    ClipboardModule,
+    CdkMenuModule,
+    CdkStepperModule,
+    CdkTableModule,
+    CdkTreeModule,
+    DragDropModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
@@ -91,10 +91,10 @@ import {MatTreeModule} from '@angular/material/tree';
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-    // OverlayModule,
-    // PortalModule,
-    // ScrollingModule,
-    // DialogModule,
+    OverlayModule,
+    PortalModule,
+    ScrollingModule,
+    DialogModule,
   ]
 })
 export class MaterialModule {}

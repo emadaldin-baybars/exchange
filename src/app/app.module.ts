@@ -8,6 +8,18 @@ import { CurrencyConverterComponent } from 'src/pages/currency-converter/currenc
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ConversionFormComponent } from 'src/components/conversion-form/conversion-form.component';
+import { ConversionService } from 'src/services/conversion.service';
+import { ConversionHttpService } from 'src/services/http/conversion-http.service';
+
+import { HttpClientModule } from '@angular/common/http';
+import { ExchangeHistoryComponent } from 'src/components/exchange-history/exchange-history.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { SparklineChartComponent } from 'src/components/sparkline-chart/sparkline-chart.component';
+
+
 
 @NgModule({
   declarations: [
@@ -15,14 +27,25 @@ import { AppComponent } from './app.component';
     HeaderComponent,
     FooterComponent,
     CurrencyConverterComponent,
-    ConversionHistoryComponent
+    ConversionHistoryComponent,
+    ConversionFormComponent,
+    ExchangeHistoryComponent,
+    SparklineChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgxChartsModule
   ],
-  providers: [],
+  providers: [
+    ConversionService,
+    ConversionHttpService,
+    HttpClientModule,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

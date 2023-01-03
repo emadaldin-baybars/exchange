@@ -1,0 +1,54 @@
+@import 'src/styles/variables';
+@import 'src/styles/colors';
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  margin: 50px 110px;
+}
+
+.title{
+    font-size: $page-title-font-size;
+    font-weight: 600;
+    color: $default-text;
+    margin-bottom: 20px;
+}
+
+.actions-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    .action-btn{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      cursor: pointer;
+    }
+
+    mat-icon{
+        font-size: 18px;
+        margin-right: 5px;
+    }
+
+    .btn-text{
+        font-size: $body-text-font-size;
+        font-weight: 600;
+    }
+
+    .primary{
+        color: $primary;
+    }
+
+    .warn{
+        color: $warn;
+    }
+}
+
+.scrollable{
+    overflow-y: auto;
+    max-height: 500px;
+}
